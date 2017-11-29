@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   attr_reader :a, :b, :c
 
@@ -9,6 +10,7 @@ class Triangle
 
   def kind
     if !valid?(@a, @b ,@c)
+      binding.pry
       begin
         raise TriangleError
       rescue TriangleError => error
