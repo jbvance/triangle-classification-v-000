@@ -1,6 +1,6 @@
 class Triangle
   attr_reader :a, :b, :c
-  
+
   def initialize(a, b, c)
     @a = a
     @b = b
@@ -32,12 +32,12 @@ class Triangle
       return :scalene
     end
   end
-  
-  
+
+
 end
 
 class TriangleError < StandardError
-  def message 
+  def message
     "The triangle is not valid"
   end
 end
