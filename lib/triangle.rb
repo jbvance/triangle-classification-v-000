@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    if !valid(@a, @b ,@c)
+    if !valid?(@a, @b ,@c)
       begin
         raise TriangleError
       rescue TriangleError => error
