@@ -21,7 +21,7 @@ class Triangle
   end
 
   def valid?(a,b,c)
-    (a + b > c) && (a + c > b) && (b + c > a) && (b + a > c) && (c + a > b) && (c + b > a) && a > 0 && b > 0 && c > 0
+    return ((a + b > c) && (a + c > b) && (b + c > a) && (b + a > c) && (c + a > b) && (c + b > a) && a > 0 && b > 0 && c > 0)
   end
 
   def get_type(a, b, c)
