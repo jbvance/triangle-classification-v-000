@@ -10,12 +10,7 @@ class Triangle
 
   def kind
     if !valid?(@a, @b ,@c)
-      binding.pry
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
+      raise TriangleError
     else
       get_type(@a, @b, @c)
     end
