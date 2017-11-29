@@ -23,7 +23,7 @@ class Triangle
 
   def get_type(a, b, c)
     return :equilateral if a==b && b==c
-    if a == c || b == c || a == c
+    if a == c || b == c || a == b
       return :isosceles
     else
       return :scalene
