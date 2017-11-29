@@ -27,7 +27,7 @@ class Triangle
   def get_type(a, b, c)
     return :equilateral if a==b && b==c
     if a == c || b == c || a == c
-      return :isoseles
+      return :isosceles
     else
       return :scalene
     end
